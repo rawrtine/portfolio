@@ -1,21 +1,20 @@
 @font-face {
     font-family: 'Honey Monly';
-    src: url('font/Honey Monly.otf') format('opentype');
+    src: url('Honey Monly.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Milk Juice';
-    src: url('font/Milky Juice.otf') format('opentype');
+    src: url('Milky Juice.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Back';
-    src: url('font/Back.ttf') format('truetype');
+    src: url('Back.ttf') format('truetype');
 }
-
 @font-face {
     font-family: 'Chocolates';
-    src: url('font/Chocolates.otf') format('opentype');
+    src: url('Chocolates.otf') format('opentype');
 }
 
 .hamburger {
