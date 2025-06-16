@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'Honey Monly';
+    src: url('font/Honey Monly.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Milk Juice';
+    src: url('font/Milky Juice.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Back';
+    src: url('font/Back.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Chocolates';
+    src: url('font/Chocolates.otf') format('opentype');
+}
+
+.hamburger {
+    display: none;
+    font-size: 190%;
+    background: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10000;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background: #f3f6e6;
+}
+
+.header {
+    display: flex;
+    margin: 0;
+}
+
+.header img {
+    width: 100%;
+}
+
+.navbar {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #722f37;
+    padding: 15px 60px;
+    color: #fff;
+    font-family: 'Milk Juice';
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14pt;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #862877;
+}
+
+.self {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 40px 40px;
+}
+
+.self img {
+    max-width: 45%;
+    height: auto;
+    padding-top: 3%;
+}
+
+.self-intro {
+    width: 55%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: 8px solid #722f37;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Chocolates', cursive;
+    font-size: 14pt;
+    color: #333;
+}
+
+.self-intro h1 {
+    font-family: 'Back';
+    color: #722f37;
+    font-size: 43pt;
+    text-align: center;
+    height: 18vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: 'Chocolates';
+}
+
+h2 {
+    font-family: 'Honey Monly';
+    font-size: 30pt;
+    color: #722f37;
+    margin-bottom: 20px;
+}
+
+.education-entry,
+.experience-entry {
+    margin-bottom: 10px;
+}
+
+.education-entry strong {
+    font-family: 'Milk Juice';
+    color: #722f37;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.experience-entry strong {
+    font-family: 'Milk Juice';
+    color: #722f37;
+    font-size: 1.0em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.education-entry span,
+.experience-entry span {
+    font-family: 'Milk Juice';
+    font-size: 0.9em;
+    color: #666;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.tools-section {
+    padding-right: 20px;
+    max-width: 1200px;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tools-section h1 {
+    font-family: 'Back';
+    font-size: 36pt;
+    color: #722f37;
+    padding-top: 1.5px;
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.category {
+    flex: 1;
+}
+
+.label {
+    font-family: 'Milk Juice';
+    font-size: 20pt;
+    color: #722f37;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.icon-card {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.icon-card img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.project {
+    text-align: center;
+}
+
+.project h1 {
+    font-family: 'Back';
+    color: #722f37;
+    font-size: 46pt;
+    padding: 30px 0;
+    margin: 0;
+    height: 17vh;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.pro {
+    text-align: center;
+}
+
+.img-project {
+    width: 200px;
+    height: auto;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.img-text {
+    font-family: 'Milk Juice';
+    color: #722f37;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.footer {
+    margin: 0;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contact-container h3 {
+    font-family: 'Honey Monly';
+    color: #722f37;
+    font-size: 36pt;
+    margin: 0;
+}
+
+.contact-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f9f9f9;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-card p {
+    margin: 0;
+    font-family: 'Milk Juice';
+    font-size: 15pt;
+    color: #563c5c;
+}
+
+@media screen and (max-width: 700px) {
+    .header img, .footer img {
+        width: 110%;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 190%;
+        background: none;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10000;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #722f37;
+        position: none;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 9999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        padding: 10px 0;
+        font-size: 16pt;
+    }
+
+    .self {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .self img {
+        max-width: 80%;
+        padding-top: 0;
+    }
+
+    .self-intro {
+        width: 100%;
+        font-size: 13pt;
+    }
+
+    .self-intro h1 {
+        font-size: 32pt;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .education-grid,
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tools-section {
+        padding: 20px;
+        border-width: 4px;
+        justify-content: center;
+    }
+
+    .label {
+        font-size: 16pt;
+    }
+
+    .icon-card {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project h1 {
+        font-size: 36pt;
+        padding: 30px 0;
+        height: auto;
+    }
+
+    .project-list {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px 40px;
+    }
+
+    .img-project {
+        width: 80%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .img-text {
+        font-size: 12pt;
+    }
+
+    .contact-container h3 {
+        font-size: 28pt;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-card {
+        justify-content: center;
+        padding: 0.75rem;
+    }
+
+    .contact-card p {
+        font-size: 13pt;
+    }
+}
